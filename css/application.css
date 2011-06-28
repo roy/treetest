@@ -1,0 +1,58 @@
+html, body {
+  font: normal 12px Helvetica,Arial,Verdana,sans-serif;
+  line-height: 28px;
+  color: #444;
+  }
+  .tree, .tree ul { 
+    padding-left: 20px; 
+    list-style-type: none;
+    cursor: move;
+  }
+  .tree {
+    padding: 0px;
+    margin: 12px;
+  }
+  .tree li {
+    margin-top: -6px;
+  }
+  .tree li a {
+    padding: 2px 0 0 18px;
+    background: url(/folder.png) no-repeat left top;
+  }
+  .tree li.file {
+    padding-left: 18px;
+  }
+  .tree li.file a {
+    padding-left: 18px;
+    background: url(/file.png) no-repeat left top;
+  }
+  .tree li span.handle {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 12px;
+    margin: 6px 3px 0 0;
+    cursor: pointer;
+  }
+  .tree li span {
+    background: url(/folder_open.png) no-repeat 3px 3px;
+  }
+  .tree li.closed span {
+    background: url(/folder_closed.png) no-repeat 3px 3px;
+  }
+  .tree li.closed li {
+    display: none;
+  }
+  .tree .drop_hover {
+    background: url(/drag.png) no-repeat bottom left;
+  }
+  .tree .drop_top {
+    background-position: 12px top;
+  }
+  .tree .drop_bottom {
+    background-position: 12px bottom;
+  }
+  .tree .drop_insert {
+    background-position: 32px 100%;
+  }
+
